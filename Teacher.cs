@@ -27,7 +27,7 @@ namespace _32
         public override void Print()
         {
             Console.WriteLine($"Студент: {Name}\n" +
-                $"Дата рождения: {DateOfBirth}\n" +
+                $"Дата рождения: {DateOfBirth:d}\n" +
                 $"Фаультет: {Faculty}\n" +
                 $"Должность: {Job}\n" +
                 $"Стаж: {Expirience}\n" +
@@ -42,7 +42,7 @@ namespace _32
             }
             else
             {
-                return DateTime.Now.Year - DateOfBirth.Year + 1;
+                return DateTime.Now.Year - DateOfBirth.Year - 1;
             }
         }
 
